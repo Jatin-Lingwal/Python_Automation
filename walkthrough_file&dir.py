@@ -14,7 +14,7 @@ def walking_with_you(Main_path):
     for files in sub_dir:
         files_path = os.path.join(Main_path, files) # Connecting Dir with the inside file & dir (to make absolute path)
         if os.path.isfile(files_path):
-            last_access = os.path.getatime(files_path) # when file was created
+            last_access = os.path.getatime(files_path) # It returns time of last access of file
             local_time = time.ctime(last_access) # it checks system time format
             size = os.path.getsize(files_path) # size of file in bytes
             print(f'File: {files_path}')
