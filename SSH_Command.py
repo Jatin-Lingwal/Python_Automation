@@ -1,4 +1,4 @@
-
+"""SSH connection and executing a command"""
 # Need to install paramiko module and imported specific function from it.
 from paramiko import SSHClient
 # AutoAddPolicy helps us to add a machine in our known host(if we are connecting with a machine for the first time.)
