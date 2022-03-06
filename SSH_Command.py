@@ -5,7 +5,7 @@ from paramiko import SSHClient
 from paramiko import AutoAddPolicy
 # To hide password entered by the user
 import getpass
-from paramiko import ssh_exception
+
 
 Host_name = input("Enter machine's IP to which you wanna connect to: ")
 User_name = input("Enter username: ")
