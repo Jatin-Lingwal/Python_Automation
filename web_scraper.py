@@ -37,13 +37,13 @@ From = '' #can your account and make sure to disable (your account ---> security
 To = '' # can provide multiple accounts in a list
 Pass = '&!(@^#(*)@^#@()&*@#!()#&'
 
-Message = MIMEMultipart()
+Message = MIMEMultipart() # empty object, message body
 
 Message['Subject'] = F'Top News in town from HACKER NEWS [Automated Email] @ {str(updated_time.day) }-{str(updated_time.month)}-{str(updated_time.year) } '
 Message['From'] = From
 Message['To'] = To
 
-Message.attach(MIMEText(body, 'html'))
+Message.attach(MIMEText(body, 'html')) # attaching email body & html is for making email in html format like we have used <br>, <b>
 
 print('Initializing server..')
 
